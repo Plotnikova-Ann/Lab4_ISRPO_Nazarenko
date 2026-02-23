@@ -1,0 +1,26 @@
+## .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio
+.vscode/
+.vs/
+*.sln
+*.csproj.user
+*.dbmdl
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+## Папки из terminal_practice
+data/
+logs/
