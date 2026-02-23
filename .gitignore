@@ -24,3 +24,20 @@ build/
 ## Папки из terminal_practice
 data/
 logs/
+
+server/obj/Debug/net10.0/*.cache
+server/obj/Debug/net10.0/*.cs
+server/obj/Debug/net10.0/*.json
+server/obj/Debug/net10.0/*.dll
+server/obj/Debug/net10.0/*.exe
+server/obj/Debug/net10.0/*.pdb
+server/obj/Debug/net*/ref/
+server/obj/Debug/net*/refint/
+
+# Служебные файлы сборки .NET
+server/obj/
+server/bin/
+*.csproj.user
+*.csproj.FileListAbsolute.txt
+*.genruntimeconfig.cache
+*.sourcelink.json
