@@ -10,12 +10,11 @@ namespace Lab4
             Console.WriteLine("Приветствую в программе!");
             
             // ФИО
-            Console.WriteLine("ФИО: Леонтьев Денис Александрович");
+            string fio = "Леонтьев Денис Александрович";
+            string group = "ИС-21";
             
-            // Группа
-            Console.WriteLine("Группа: ИС-21");
-            
-            // Текущая дата и время
+            Console.WriteLine($"ФИО: {fio}");
+            Console.WriteLine($"Группа: {group}");
             Console.WriteLine($"Текущая дата и время: {DateTime.Now}");
             
             bool isRunning = true;
@@ -31,7 +30,26 @@ namespace Lab4
                 
                 string choice = Console.ReadLine();
                 
-                // Здесь будет логика выбора (добавим позже)
+                // ЛОГИКА ВЫБОРА
+                switch (choice)
+                {
+                    case "1":
+                        Console.WriteLine($"ФИО: {fio}");
+                        break;
+                    case "2":
+                        Console.WriteLine($"Группа: {group}");
+                        break;
+                    case "3":
+                        Console.WriteLine($"Текущая дата и время: {DateTime.Now}");
+                        break;
+                    case "4":
+                        Console.WriteLine("Выход из программы. До свидания!");
+                        isRunning = false;
+                        break;
+                    default:
+                        Console.WriteLine("Неверный выбор. Попробуйте снова.");
+                        break;
+                }
             }
         }
     }
